@@ -4,7 +4,7 @@ Try it out: https://react-calculator-seven-woad.vercel.app/
 
 React Calculator is a simple calculator application built with React.
 
-![Screenshot of React Calculator](screenshot.png)
+![Screenshot of React Calculator](calc-img.png)
 
 ## Features
 
