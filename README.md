@@ -18,24 +18,30 @@ React Calculator is a simple calculator application built with React.
 - [Node.js](https://nodejs.org/) (v14.0.0 or higher)
 - [npm](https://www.npmjs.com/) (v6.0.0 or higher)
 
+### Use the calculator at: https://react-calculator-seven-woad.vercel.app/
+
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/deyordanov/React-Calculator.git
+  git clone https://github.com/deyordanov/React-Calculator.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd React-Calculator
+  cd React-Calculator
 ```
 
 3. Install the required dependencies:
 ```bash
-npm install
+  npm install
 ```
 
 4. Start the development server:
 ```bash
-npm run dev
+  npm run dev
 ```
+5. Usage:
+  Open your web browser and visit http://localhost:3000 to use the calculator.
+
+
