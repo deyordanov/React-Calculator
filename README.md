@@ -11,8 +11,7 @@ React Calculator is a simple calculator application built with React.
 
 ## Technologies Used
 
-- [React](https://reactjs.org/) <img src="https://www.svgrepo.com/show/452092/react.svg" alt="React Icon" width="16" height="16">
- - A JavaScript library for building user interfaces
+- [React](https://reactjs.org/) <img src="https://www.svgrepo.com/show/452092/react.svg" alt="React Icon" width="24" height="24">: A JavaScript library for building user interfaces
 - [Vite](https://vitejs.dev/) - A build tool that facilitates faster development cycles
 - [Node.js](https://nodejs.org/) - JavaScript runtime built on Chrome's V8 JavaScript engine
 - [npm](https://www.npmjs.com/) - Package manager for JavaScript
