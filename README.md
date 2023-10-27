@@ -9,6 +9,14 @@ React Calculator is a simple calculator application built with React.
 - Basic arithmetic operations (addition, subtraction, multiplication, division)
 - Clean and intuitive UI
 
+## Technologies Used
+
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Vite](https://vitejs.dev/) - A build tool that facilitates faster development cycles
+- [Node.js](https://nodejs.org/) - JavaScript runtime built on Chrome's V8 JavaScript engine
+- [npm](https://www.npmjs.com/) - Package manager for JavaScript
+- [Vercel](https://vercel.com/) - Deployment platform
+
 ### You can use the calculator at: <a href="https://react-calculator-seven-woad.vercel.app/" target="_blank">https://react-calculator-seven-woad.vercel.app/</a>
 
 ## Getting Started
