@@ -1,5 +1,3 @@
-Try it out: https://react-calculator-seven-woad.vercel.app/
-
 # React Calculator
 
 React Calculator is a simple calculator application built with React.
@@ -46,5 +44,5 @@ React Calculator is a simple calculator application built with React.
 
 ## Support
 
-If you encounter any bugs or have suggestions, please open an issue on the [GitHub repository](https://github.com/deyordanov/React-Calculator/issues).
+  If you encounter any bugs or have suggestions, please open an issue on the [GitHub repository](https://github.com/deyordanov/React-Calculator/issues).
 
