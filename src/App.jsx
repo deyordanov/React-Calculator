@@ -1,6 +1,5 @@
 import "./App.css";
 import { useReducer } from "react";
-
 import DigitButton from "./Components/DigitButton";
 import OperationButton from "./Components/OperationButton";
 
@@ -16,9 +15,19 @@ const INTEGER_FORMATTER = new Intl.NumberFormat("en-us", {
   maximumFractionDigits: 0,
 });
 
+const initialState = {
+  currentOperand: "",
+  previousOperand: null,
+  operation: null,
+  overwrite: false,
+};
+
 function reducer(state, { type, payload }) {
   switch (type) {
     case ACTIONS.ADD_DIGIT:
+      if (!state.currentOperand)
+        return { ...state, currentOperand: payload.digit };
+
       if (state.overwrite) {
         return {
           ...state,
@@ -34,8 +43,10 @@ function reducer(state, { type, payload }) {
         ...state,
         currentOperand: `${state.currentOperand || ""}${payload.digit}`,
       };
+
     case ACTIONS.CLEAR:
-      return {};
+      return initialState;
+
     case ACTIONS.CHOOSE_OPERATION:
       if (state.currentOperand == null && state.previousOperand == null)
         return state;
@@ -62,6 +73,7 @@ function reducer(state, { type, payload }) {
         operation: payload.operation,
         currentOperand: null,
       };
+
     case ACTIONS.RESULT:
       if (
         state.operation == null ||
@@ -77,6 +89,7 @@ function reducer(state, { type, payload }) {
         operation: null,
         currentOperand: result(state),
       };
+
     case ACTIONS.DELETE_DIGIT:
       if (state.overwrite) {
         return { ...state, overwrite: false, currentOperand: null };
@@ -131,7 +144,7 @@ function formatOperand(operand) {
 function App() {
   const [{ currentOperand, previousOperand, operation }, dispacth] = useReducer(
     reducer,
-    {}
+    initialState
   );
 
   return (
